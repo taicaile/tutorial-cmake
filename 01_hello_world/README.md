@@ -10,3 +10,11 @@ make
 # run the target
 ./hello
 ```
+
+Or
+
+```bash
+mkdir build
+cd build
+cmake ..
+```
