@@ -59,4 +59,15 @@ ADD_EXECUTABLE(hello main.cpp) # 生成的可执行文件名是 hello，源文�
 
 使用 `CMAKE` 一个新的指令： `INSTALL`，可以安装：二进制，动态库，静态库以及文件，目录，脚本等。
 
-`CMAKE_INSTALL_PREFIX`
+`CMAKE_INSTALL_PREFIX` default is `/usr/local/`
+
+```bash
+[100%] Built target hello
+Install the project...
+-- Install configuration: ""
+-- Up-to-date: /usr/local/share/doc/cmake/COPYRIGHT
+-- Up-to-date: /usr/local/share/doc/cmake/README
+-- Installing: /usr/local/bin/runhello.sh
+-- Up-to-date: /usr/local/share/doc/cmake
+-- Installing: /usr/local/share/doc/cmake/hello.txt
+```
