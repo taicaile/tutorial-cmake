@@ -71,3 +71,25 @@ Install the project...
 -- Up-to-date: /usr/local/share/doc/cmake
 -- Installing: /usr/local/share/doc/cmake/hello.txt
 ```
+
+## 静态库和动态库的构建
+
+静态库和动态库的区别
+
+- 静态库的拓展名一般为 `.a` 或者 `.lib`；动态库的拓展名一般为 `.so` 或 `.dll`。
+- 静态库在编译时会直接整合到目标程序中，编译成功后可以独立运行。
+- 动态库在编译的时候不会整合到目标程序中，即可执行文件无法独立运行。
+
+`ADD_LIBRARY` 关键字
+
+`ADD_LIBRARY(hello SHARED ${LIBHELLO_SRC})`
+
+- hello 是库名字，生成的库文件名字前会添加一个 lib。
+- SHARED，动态库，STATIC，静态库。
+- ${LIBHELLO_SRC} 源文件。
+
+同时构建静态库和动态库，
+
+```cmake
+
+```
