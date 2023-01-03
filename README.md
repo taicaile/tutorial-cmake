@@ -109,3 +109,9 @@ SET_TARGET_PROPERTIES(hello PROPERTIES CLEAR_DIRECT_OUTPUT 1)
 INSTALL(FILES hello.h DESTINATION include/hello)
 INSTALL(TARGETS hello hello_static LIBRARY DESTINATION lib ARCHIVE DESTINATION lib)
 ```
+
+生成可调式版本的二进制文件，
+
+```bash
+cmake -D CMAKE_BUILD_TYPE=debug ..
+```
